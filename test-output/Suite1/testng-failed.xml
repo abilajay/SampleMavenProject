@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite1]" parallel="tests">
+  <test thread-count="2" name="Test2(failed)" parallel="tests">
+    <classes>
+      <class name="org.automation.AmazonAutomation">
+        <methods>
+          <include name="oneTime"/>
+          <include name="tearDown"/>
+          <include name="searchIphone"/>
+        </methods>
+      </class> <!-- org.automation.AmazonAutomation -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="2" name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="org.automation.AtactinAutomation">
+        <methods>
+          <include name="tc2"/>
+          <include name="tc4"/>
+          <include name="tc3"/>
+          <include name="tc5"/>
+          <include name="oneTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.automation.AtactinAutomation -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
